@@ -23,3 +23,41 @@ button {
 body {
     background: #100e0f;
 }
+
+/* Nav start */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+li a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Nav End */
+
+/* Header Start */
+.header {
+    /* https://www.pexels.com/photo/white-ceramic-coffee-cup-on-white-saucer-129207/ */
+    background: url('assets/images/pexels-natri-129207.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+}
