@@ -59,5 +59,96 @@ li a:hover {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    /* Flex box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Main Headings */
+.main-headings {
+    position: absolute;
+    top: 20rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+
+.primary-headings {
+    position: absolute;
+    bottom: 15rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+
+.main-btn {
+    position: absolute;
+    bottom: 10rem;       /* or consider using px for precision */
+    left: 50%;           /* Center horizontally */
+    transform: translateX(-50%) translateY(60px); /* Center adjustment + vertical offset */
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;        /* Explicitly remove if not needed */
+    cursor: pointer;     /* Better UX for clickable elements */
+    z-index: 10;         /* Ensure visibility if overlapping */
+    /* Add these for better appearance */
+    border-radius: 4px;  /* Optional rounded corners */
+    color: white;        /* Text color - adjust as needed */
+    font-weight: bold;   /* Better readability */
+}
+
+.main-btn:hover {
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(58px); /* Slight raise effect */
+}
+
+#our-story {
+    margin-top: 15%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;  /* Horizontal centering */
+    /* align-items: center;  Vertical centering */
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    background: url(assets/images/pexels-chitokan-2183027-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-style {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-100px);
+}
+
+.line {
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+}
+
+.section-content p {
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
 }
