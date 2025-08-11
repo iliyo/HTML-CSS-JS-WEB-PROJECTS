@@ -1,0 +1,36 @@
+/* Footer Start */
+footer {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+footer .container {
+    margin: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+
+footer .heading-info {
+    margin-bottom: 20px;
+
+}
+
+footer p {
+    line-height: 25px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.para {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}

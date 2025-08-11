@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* When you set flex-direction: column, you change the main axis and cross axis:
+
+Main axis: Vertical (top to bottom)
+Cross axis: Horizontal (left to right)
+
+justify-content = controls alignment along the main axis (direction of flex-direction)
+align-items = controls alignment along the cross axis (perpendicular to flex-direction)
+
+So with flex-direction: column:
+
+justify-content controls the vertical alignment (main axis)
+align-items controls the horizontal alignment (cross axis)
+
+"Do I need to position a child element absolutely relative to this parent?" If yes, use position: relative on the parent.
+
+position: relative on a parent creates a "positioning context" for its absolutely positioned children. Without it, those children will "escape"
+and position themselves relative to the document/viewport instead of their intended parent.
+
+The CSS positioning algorithm works like this:
+
+Find the nearest positioned ancestor (relative, absolute, fixed, sticky)
+If none exists, use the viewport/document as reference
+Apply the top, right, bottom, left values
+
+Only use position: relative on parents when you actually have absolutely positioned children that need to anchor to them.
+
+background-size: cover
+    Scales image to cover the entire container
+    Maintains aspect ratio
+    May crop parts of the image if aspect ratios don't match
+
+    Desktop: 1920x600 container with 1920x1080 image = top/bottom cropped
+    Mobile: 375x300 container with same image = LOTS of sides cropped
+
+As Your Mentor's Advice
+    Always test your backgrounds on different screen sizes
+    Keep important image content in the center - it's least likely to be cropped
+    Consider using object-fit: cover with <img> tags for more control
+    Have mobile-specific images when the cropping would remove important content
+
+ */
+:root {
+    --main-color: #deab5f;
+    --primary-color: #312e2e;
+}
+
+/* Utility Styles */
+button {
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #100e0f;
+}

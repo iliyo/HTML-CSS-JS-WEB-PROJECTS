@@ -1,0 +1,71 @@
+/* Products Start */
+.products {
+    margin-top: 5rem;
+}
+
+.title-three {
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    border: solid 2px var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Vertical or main axis centering because direction is column */
+    align-items: center; /* Horizontal or cross axis centering because direction is column  */
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -60px;
+}
+
+.img-one {
+    background: url('../assets/images/1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-two {
+    background: url('../assets/images/2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-three {
+    background: url('../assets/images/3.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.card-title {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.card .items p {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 20px 0;
+}
+/* Products End */

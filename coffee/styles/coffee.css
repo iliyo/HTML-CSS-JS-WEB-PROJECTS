@@ -1,0 +1,60 @@
+/* Coffee Container Start */
+.coffee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.content-section p {
+    max-width: 500px;
+}
+
+.img-container {
+    width: 500px;
+    height: 400px;
+}
+  
+.img-2 {
+    width: 400px;
+    height: 400px;
+}
+
+.content-section {
+    max-width: 400px;
+}
+
+.title-two {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+}
+
+.content-section p {
+    color: white;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-section {
+        text-align: center;
+    }
+    .coffee-container .img-container {
+        margin-top: 5rem;
+        width: 50%;
+    }
+    .title {
+        margin: 0 auto;
+    }
+    .title-two {
+        margin: 0 auto;
+    }
+    .title-three {
+        margin: 0 auto;
+    }
+}
+
+/* Coffee Container End */

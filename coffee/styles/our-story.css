@@ -1,0 +1,62 @@
+/* Our story start */
+#our-story {
+    margin-top: 15%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    background: url(../assets/images/pexels-chitokan-2183027-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-style {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-100px);
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+}
+
+.section-content p {
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #our-story {
+        text-align: center;
+    }
+    #our-story .title {
+        transform: translateX(70px);
+    }
+    #our-story .line {
+        display: none;
+    }
+    #our-story .img-container {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+/* Our story End */
