@@ -14,6 +14,7 @@
     background: url(../assets/images/pexels-chitokan-2183027-removebg-preview.png);
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .title-style {
@@ -48,7 +49,7 @@
         text-align: center;
     }
     #our-story .title {
-        transform: translateX(70px);
+        transform: translateX(0); /* Resets X translation to 0 */
     }
     #our-story .line {
         display: none;

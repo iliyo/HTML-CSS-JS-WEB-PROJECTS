@@ -40,6 +40,8 @@ As Your Mentor's Advice
     Consider using object-fit: cover with <img> tags for more control
     Have mobile-specific images when the cropping would remove important content
 
+@TODO Enhance for middle screens between 769px and 9xx
+
  */
 :root {
     --main-color: #deab5f;

@@ -46,22 +46,52 @@ li a:hover {
 
 /* Main Headings */
 .main-headings {
+    /* Positioning */
     position: absolute;
-    top: 15rem;
-    font-size: 6rem;
-    word-spacing: 10px;
+    top: 30%; /* Vertical center start point */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Precise centering */
+    
+    /* width: clamp(300px, 90%, 1200px); Ensures: */
+    /* - Never narrower than 300px */
+    /* - Default 90% width */
+    /* - Never wider than 1200px */
+    /* Typography */
+    font-size: clamp(2.5rem, 8vw, 6rem); /* Fluid scaling */
+    word-spacing: clamp(4px, 1vw, 10px); /* Responsive spacing */
+    
+    /* Layout */
+    width: 90%; /* Prevents overflow */
+    max-width: 1200px; /* Maximum content width */
+    text-align: center; /* Center text */
+    padding: 0 5%; /* Safe side spacing */
+    
+    /* Performance */
+    will-change: transform; /* GPU acceleration */
 }
 
 .primary-headings {
     position: absolute;
-    bottom: 10rem;
-    font-size: 6rem;
-    word-spacing: 10px;
+    bottom: 10%; /* Vertical center start point */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Precise centering */
+    
+    /* Typography */
+    font-size: clamp(2.5rem, 8vw, 6rem); /* Fluid scaling */
+    word-spacing: clamp(4px, 1vw, 10px); /* Responsive spacing */
+    
+    /* Layout */
+    width: 90%; /* Prevents overflow */
+    max-width: 1200px; /* Maximum content width */
+    text-align: center; /* Center text */
+    
+    /* Performance */
+    will-change: transform; /* GPU acceleration */
 }
 
 .main-btn {
     position: absolute;
-    bottom: 10rem;
+    bottom: 15%;
     padding: 10px 30px;
     background: transparent;
     background: var(--main-color);
