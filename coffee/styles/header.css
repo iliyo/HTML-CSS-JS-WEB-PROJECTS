@@ -47,34 +47,27 @@ li a:hover {
 /* Main Headings */
 .main-headings {
     position: absolute;
-    top: 7rem;
-    font-size: 4rem;
+    top: 15rem;
+    font-size: 6rem;
     word-spacing: 10px;
 }
 
 .primary-headings {
     position: absolute;
-    bottom: 4rem;
-    font-size: 4rem;
+    bottom: 10rem;
+    font-size: 6rem;
     word-spacing: 10px;
-    margin-bottom: -40px;
 }
 
 .main-btn {
     position: absolute;
-    bottom: 2rem;
+    bottom: 10rem;
     padding: 10px 30px;
-    margin-top: 20px;
     background: transparent;
     background: var(--main-color);
     border: none;
     cursor: pointer;
     transform: translateY(60px);
-}
-
-.main-btn:hover {
-    opacity: 0.9;
-    transform: translateY(58px); /* Slight raise effect */
 }
 
 @media only screen and (max-width: 768px) {
